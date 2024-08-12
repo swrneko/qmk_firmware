@@ -1,3 +1,4 @@
+// Copyright 2024 Egorov Alexander (swrneko)
 // Copyright 2021 Nicolas Druoton (druotoni)
 // Copyright 2012 Jun Wako <wakojun@gmail.com>
 // Copyright 2015 Jack Humbert
@@ -9,13 +10,15 @@
 
 #define MASTER_LEFT
 #define OLED_DRIVER_ENABLE
+#define USB_SUSPEND_WAKEUP_DELAY 5000
+#define SPLIT_WATCHDOG_ENABLE
 
 // tapping toggle for my layers
 #define TAPPING_TOGGLE 2
 
 // choose IS_LEFT or IS_RIGHT for compilation and flash firmware
-//#define IS_LEFT 1
-#define IS_RIGHT 1
+#define IS_LEFT 1
+//#define IS_RIGHT 1
 
 // logo glitch
 #define WITH_GLITCH
